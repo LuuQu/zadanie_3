@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Formularz</h1>
+    <form method="post">
+      <label for="dane.Imie">Imię</label>
+      <input type="text" asp-for="dane.Imie">
+      <span asp-validation-for="dane.Imie" class="text-danger"></span>
+      <label for="dane.Rok">Rok</label>
+      <input type="number" asp-for="dane.Rok">
+      <span asp-validation-for="dane.Rok" class="text-danger"></span>
+      <button type="submit">Submit</button>
+    </form>
+</div>

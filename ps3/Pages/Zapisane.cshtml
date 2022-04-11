@@ -1,0 +1,11 @@
+﻿@page
+@model ps3.Pages.ZapisaneModel
+@{
+ViewData["Title"] = "Data in session";
+}
+<p>Dane w zapisane w sesji</p>
+ @foreach(string tmp in Model.lista)
+        {
+            <p>@tmp</p>
+        }
+
